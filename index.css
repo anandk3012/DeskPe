@@ -636,9 +636,7 @@ body {
         border-radius: 80px;
     }
 
-    .form-button:hover {
-        /* background-color:#00999C; */
-    }
+
     .form-button a{
         color: white;
         text-decoration: none;
