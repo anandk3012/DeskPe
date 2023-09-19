@@ -11,9 +11,114 @@
         href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100;0,400;1,100;1,400&family=Noto+Serif+Lao:wght@100;200&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
     <title>DeskPe</title>
+    <script>
+
+        // Employee Slideshow
+        let slideIndex_employee = 4;
+
+        showSlides_employee(slideIndex_employee);
+
+        // Next/previous controls
+        function plusSlides_employee(n) {
+            showSlides_employee((slideIndex_employee += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide_employee(n) {
+            showSlides_employee((slideIndex_employee = n));
+        }
+
+        function showSlides_employee(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide_employee");
+            let dots = document.getElementsByClassName("dot-employee");
+
+            // Ensure that the slideIndex_employee is within valid bounds
+            if (n >= slides.length) {
+                slideIndex_employee = 0; // Reset to the first set of 4 slides
+            }
+            if (n < 0) {
+                slideIndex_employee = slides.length - 4; // Set to the last set of 4 slides
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the 4 slides starting from slideIndex_employee
+            for (i = slideIndex_employee; i < slideIndex_employee + 4; i++) {
+                if (slides[i]) {
+                    slides[i].style.display = "flex";
+                    slides[i].style.alignitems = "center"
+                    slides[i].style.textalign = "center"
+                }
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the currently displayed dot
+            dots[Math.floor(slideIndex_employee / 4)].className += " active";
+        }
+    </script>
+    <script>
+        // Company Slideshow
+        let slideIndex_company = 4;
+        showSlides_company(slideIndex_company);
+        function plusSlides_company(n) {
+            showSlides_company((slideIndex_company += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide_company(n) {
+            showSlides_company((slideIndex_company = n));
+        }
+
+
+        function showSlides_company(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide_company");
+            let dots = document.getElementsByClassName("dot-company");
+
+            // Ensure that the slideIndex_company is within valid bounds
+            if (n >= slides.length) {
+                slideIndex_company = 0; // Reset to the first set of 4 slides
+            }
+            if (n < 0) {
+                slideIndex_company = slides.length - 4; // Set to the last set of 4 slides
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the 4 slides starting from slideIndex_company
+            for (i = slideIndex_company; i < slideIndex_company + 4; i++) {
+                if (slides[i]) {
+                    slides[i].style.display = "flex";
+                    slides[i].style.alignitems = "center"
+                    slides[i].style.textalign = "center"
+                }
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the currently displayed dot
+            dots[Math.floor(slideIndex_company / 4)].className += " active";
+        }
+
+    </script>
 </head>
 
 <body>
+
     <div class="header">
         <div id="header-logo">
             <a href="index.html"><span>DeskPe</span></a>
@@ -24,140 +129,179 @@
 
     </div>
 
-        <div class="mainbody-1">
+    <div class="mainbody-1">
 
-            <div class="display-1">
-                <h1>Swift, Efficient and Easy-to-Use solution
-                    for all your corporate expenses </h1>
+        <div class="display-1">
+            <h1>Swift, Efficient and Easy-to-Use solution
+                for all your corporate expenses </h1>
+        </div>
+        <div class="display-box">
+            <div class="display-2">
+                <p>Make your company payments and reimbursements
+                    hassle-free and quickly</p>
             </div>
-            <div class="display-box">
-                <div class="display-2">
-                    <p>Make your company payments and reimbursements
-                        hassle-free and quickly</p>
-                </div>
-                <div class="display-3">
-                    <img src="Main Images.svg" alt="App">
-                </div>
+            <div class="display-3">
+                <img src="Main Images.svg" alt="App">
             </div>
         </div>
-        <div class="mainbody-2">
-            <div class="about-1">
-                <div class="box-1">
-                    <h2>Who are we?</h2>
-                    <p>DeskPe is a wallet based payment app tailored specifically for
-                        companies,where the company will have complete control
-                        over the employee's wallet and expense tracking in real time.
-                    </p>
-                </div>
-                <div class="box-2">
-                    <h2>What we provide?</h2>
-                    <p>Provide the employees easy payment options
-                        including UPI,mobile number, receipt scanning,
-                        automated approvals, and reporting features.
+    </div>
+    <div class="mainbody-2">
+        <div class="about-1">
+            <div class="box-1">
+                <h2>Who are we?</h2>
+                <p>DeskPe is a wallet based payment app tailored specifically for
+                    companies,where the company will have complete control
+                    over the employee's wallet and expense tracking in real time.
+                </p>
+            </div>
+            <div class="box-2">
+                <h2>What we provide?</h2>
+                <p>Provide the employees easy payment options
+                    including UPI,mobile number, receipt scanning,
+                    automated approvals, and reporting features.
 
-                    </p>
-                </div>
-
-            </div>
-            <div class="about-2">
-                <div class="why">
-                    <h1>Why Us?</h1>
-                </div>
-                <div class="why-icons">
-                    <div id="icon-1" class="icons">
-                        <img src="time saving png.png" alt="">
-                        <span>Helps your business save a lot of time by providing a quick and automated solution.</span>
-                    </div>
-                    <div id="icon-2" class="icons">
-                        <img src="cost effective png.png" alt="">
-                        <span>Helps your business reduce expenses as it is much cheaper than corporate cards</span>
-                    </div>
-                    <div id="icon-3" class="icons">
-                        <img src="easy to use png.png" alt="">
-                        <span>Easy-to -use simplified payment app specially tailored for corporates.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mainbody-3">
-            <div class="features">
-    
-                <div class="slider" id="slider-1">
-                    <div class="for-employee">
-                        <h2>Convenience for Employees</h2>
-                    </div>
-                    <div class="slide-track">
-                        <div class="slide">
-                            Easy Payment options</div>
-                        <div class="slide">
-                            Recharged wallet</div>
-                        <div class="slide">
-                            Automated Approvals</div>
-                        <div class="slide">
-                            Manage Expenses</div>
-                        <div class="slide">
-                            Compliance verification</div>
-                        <div class="slide">
-                            Invoice Scanning</div>
-                        <div class="slide">
-                            Expense Report</div>
-                        <div class="slide">
-                            Maintain records</div>
-                    </div>
-                </div>
-                <div class="slider" id="slider-2">
-                    <div class="for-company">
-                        <h2>Vantage for Company</h2>
-                    </div>
-                    <div class="slide-track">
-                        <div class="slide">
-                            Make Easy Payments</div>
-                        <div class="slide">
-                            Track expenses in real time</div>
-                        <div class="slide">
-                            Credit wallet as required</div>
-                        <div class="slide">
-                           Access to all expenses</div>
-                        <div class="slide">
-                            Complete access over employees wallet</div>
-                        <div class="slide">
-                            Expense reports and industry benchmarks</div>
-                        <div class="slide">
-                            Customizable company structure and compliance policy</div>
-                        <div class="slide">
-                            Integration with other systems</div>
-                    </div>
-                </div>
-                <div class="benefits">
-                    <h2>Additional Unique Features</h2>
-                    <div id="benefits">
-                        <div class="slide">Travel Booking</div>
-                        <div class="slide">Gift Vouchers</div>
-                        <div class="slide">Pay Bills</div>
-                        <div class="slide">Subscriptions</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="googleForm">
-            <span>
-                Don't get left out in digitising your business expenses and grow faster.<br>
-                For inquiries and more details, reach out to us here:<a id="formlink"href="www.google.com">Form</a>
-            </span>
-        </div>
-        <div class="footer" id="footer">
-            <div id="header-logo">
-                <span><a href="index.html">DeskPe</a></span>
-            </div>
-            <div class="contact-info">
-                <p>Contact us:<br>
-                    Ph No. : +91 89794 71587<br>
-                    Email : deskpe@gmail.com
                 </p>
             </div>
 
-        
-    </body>
-    
-    </html>
+        </div>
+        <div class="about-2">
+            <div class="why">
+                <h1>Why Us?</h1>
+            </div>
+            <div class="why-icons">
+                <div id="icon-1" class="icons">
+                    <img src="time saving png.png" alt="">
+                    <span>Helps your business save a lot of time by providing a quick and automated solution.</span>
+                </div>
+                <div id="icon-2" class="icons">
+                    <img src="cost effective png.png" alt="">
+                    <span>Helps your business reduce expenses as it is much cheaper than corporate cards</span>
+                </div>
+                <div id="icon-3" class="icons">
+                    <img src="easy to use png.png" alt="">
+                    <span>Easy-to -use simplified payment app specially tailored for corporates.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbody-3">
+        <div class="features">
+
+            <div class="slider" id="slider-1">
+                <div class="for-employee" style="margin:15px">
+                    <h2>Convenience for Employees</h2>
+                </div>
+                <div class="slide-track">
+                    <a class="prev-employee" onclick="plusSlides_employee(-4)">&#10094;</a>
+                    <div class="slide_employee">
+                        <span>Easy Payment options</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Recharged wallet</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Automated Approvals</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Automated Approvals</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Compliance verification</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Invoice Scanning</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Expense Report</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Maintain records</span>
+                    </div>
+
+                    <a class="next-employee" onclick="plusSlides_employee(4)">&#10095;</a>
+                </div><br>
+                <div style="text-align: center">
+                    <span class="dot-employee" onclick="currentSlide_employee(4)"></span>
+                    <span class="dot-employee" onclick="currentSlide_employee(8)"></span>
+
+                </div>
+
+            </div>
+            <div class="slider" id="slider-2">
+                <div class="for-company" style="margin:15px 15px 15px 0">
+                    <h2>Vantage for Company</h2>
+                </div>
+                <div class="slide-track">
+                    <a class="prev-company" onclick="plusSlides_company(-4)">&#10094;</a>
+                    <div class="slide_company">
+                        <span>Make easy payment</span>s
+                    </div>
+                    <div class="slide_company">
+                        <span>Track expenses in real time</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Credit wallet as required</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Access to all expenses</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Complete access over employees wallet</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Expense reports and industry benchmarks</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Customizable company structure and compliance policy</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Integration with other systems</span>
+                    </div>
+
+                    <a class="next-company" onclick="plusSlides_company(4)">&#10095;</a>
+                </div><br>
+                <div style="text-align: center">
+                    <span class="dot-company" onclick="currentSlide_company(4)"></span>
+                    <span class="dot-company" onclick="currentSlide_company(8)"></span>
+                </div>
+            </div>
+            <div class="benefits">
+                <h2>Unique Features</h2>
+                <div id="benefits">
+                    <div class="slide_benefits">Travel Booking</div>
+                    <div class="slide_benefits">Gift Vouchers</div>
+                    <div class="slide_benefits">Pay Bills</div>
+                    <div class="slide_benefits">Subscriptions</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            plusSlides_company(4);
+            plusSlides_employee(4);
+        </script>
+    </div>
+    </div>
+    <div class="googleForm">
+        <span>
+            Don't get left out in digitising your business expenses and grow faster.<br>
+            For inquiries and more details, reach out to us here:
+
+        </span>
+       <iframe src="https://script.google.com/a/macros/iith.ac.in/s/AKfycbyrbwikUjf_TWAASkjUFBCltkclP-LN6PtKcXPEK5I6I6A6oyuREfmgqK6nsEh3S7Hq/exec" frameborder="0" height="automated" width="1000" scrolling="no"></iframe>
+    </div>
+    <div class="footer" id="footer">
+        <div id="header-logo">
+            <span><a href="index.html">DeskPe</a></span>
+        </div>
+        <div class="contact-info">
+            <p>Contact us:<br>
+                Ph No. : +91 89794 71587<br>
+                Email : deskpe@gmail.com
+            </p>
+        </div>
+
+
+</body>
+
+</html>
