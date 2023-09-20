@@ -18,36 +18,40 @@ gsap.from('.display-3',{
     x:100,opacity:-1,duration:2.5
 })
 
-gsap.from('.box-1', {
-    x: -40,
-    opacity: -1,
-    duration: 2.5,
+gsap.from('.box-1',{
+    x:-100,
+    y:100,
+    opacity:-1,
     
-    scrollTrigger: {
-        trigger: '.box-1',
-        start: 'top 70%',
-        end: 'bottom 40%',
-
-        scrub: false,
-        markers: false,
-        scrollActions: 'play reverse play reverse',
+    scrollTrigger:{
+        trigger:'.box-1',
+        start:'top 101%',
+        end:'bottom 90%',
+        scrub:true,
+        markers:false,
+        scrollActions:'play reverse play reverse'
+        ,duration:2.5,
     }
 
 })
-gsap.from('.box-2', {
-    x: 40,
-    opacity: -1,
-    duration: 2.5,
-    scrollTrigger: {
-        trigger: '.box-2',
-        start: 'top 70%',
-        end: 'bottom 40%',
-        scrub: false,
-        markers: false,
-        scrollActions: 'play reverse play reverse',
+gsap.from('.box-2',{
+    x:100,
+    y:100,
+    opacity:-1,
+    
+    scrollTrigger:{
+        trigger:'.box-2',
+        start:'top 101%',
+        end:'bottom 90%',
+        scrub:true,
+        markers:false,
+        scrollActions:'play reverse play reverse'
+        ,duration:2.5,
     }
 
-}) 
+})
+
+ 
     gsap.from('.for-employee',{
         x:-100,
         duration:2,opacity:-1,
@@ -80,6 +84,21 @@ gsap.from('.about-2',{
     
     scrollTrigger:{
         trigger:'.about-2',
+        start:'top 100%',
+        end:'bottom 90%',
+        scrub:true,
+        markers:false,
+        scrollActions:'play reverse play reverse'
+        ,duration:1,
+    }
+
+})
+gsap.from('.features',{
+    y:100,
+    opacity:0,
+    
+    scrollTrigger:{
+        trigger:'.features',
         start:'top 101%',
         end:'bottom 90%',
         scrub:true,
@@ -94,10 +113,26 @@ gsap.from('#feat-head',{
     duration:2,opacity:-1,
     scrollTrigger:{
         trigger:'.benefits',
-        start:'top 90%',
+        start:'top bottom',
         end:'bottom 20%',
         scrub:false,
         markers:false,
         scrollActions:'play reverse play reverse'
     } 
+})
+
+gsap.from('.googleForm',{
+    y:100,
+    opacity:0,
+    
+    scrollTrigger:{
+        trigger:'.googleForm',
+        start:'top 101%',
+        end:'bottom 90%',
+        scrub:true,
+        markers:false,
+        scrollActions:'play reverse play reverse'
+        ,duration:2.5,
+    }
+
 })

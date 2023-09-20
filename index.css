@@ -308,7 +308,8 @@ body {
     .for-employee {
         display: flex;
         justify-content: flex-start;
-        width: 100%;
+        align-self: center;
+        width: 80%;
         margin: 1vh 0 0 0;
         font-size: 1.2vw;
     }
@@ -323,7 +324,7 @@ body {
     .for-company {
         display: flex;
         justify-content: flex-end;
-        width: 100%;
+        width: 90%;
         margin: 1vh 0 0 0;
         font-size: 1.2vw;
     }
@@ -336,11 +337,14 @@ body {
     }
 
     .slider {
+        display: flex;
+        flex-direction: column;
         height: 40%;
         margin: 1vw auto;
         overflow: hidden;
         position: relative;
-        width: 80%;
+        width: 100%;
+        justify-content: space-around;
 
     }
 
