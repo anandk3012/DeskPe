@@ -123,16 +123,16 @@ gsap.from('#feat-head',{
 
 gsap.from('.googleForm',{
     y:100,
-    opacity:0,
+    opacity:0,duration:2.5,
     
     scrollTrigger:{
         trigger:'.googleForm',
         start:'top 101%',
         end:'bottom 90%',
-        scrub:true,
+        scrub:false,
         markers:false,
         scrollActions:'play reverse play reverse'
-        ,duration:2.5,
+        
     }
     
 })
