@@ -393,10 +393,19 @@ body {
         width: 100%;
         height: auto;
     }
-
-    .slide_employee {
+    /* .icon_fa{
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+    }
+    .icon-text{
+        margin-top: -30px;
+    } */
+    .slide_employee {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
         text-align: center;
         font-size: 2vh;
