@@ -1,7 +1,7 @@
 gsap.registerPlugin('ScrollTrigger');
 
 gsap.from('.display-1',{
-    y:-100,opacity:-1,duration:2,
+    y:-100,opacity:-1,duration:3,delay:1.5,
     scrollTrigger:{
         trigger:'.mainbody-1',
         start: 'top 101%',
@@ -12,10 +12,10 @@ gsap.from('.display-1',{
     }
 })
 gsap.from('.display-2',{
-    x:-100,opacity:-1,duration:2.5
+    x:-100,opacity:-1,duration:2.5,delay:1.5,
 })
 gsap.from('.display-3',{
-    x:100,opacity:-1,duration:2.5
+    x:100,opacity:-1,duration:2.5,delay:1.5,
 })
 
 gsap.from('.box-1',{
@@ -110,7 +110,7 @@ gsap.from('.features',{
 })
 gsap.from('#feat-head',{
    y:50,
-    duration:2,opacity:-1,
+    duration:1.5,opacity:-1,
     scrollTrigger:{
         trigger:'.benefits',
         start:'top bottom',
