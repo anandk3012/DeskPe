@@ -471,7 +471,7 @@ body {
     .prev-employee,
     .next-employee {
         cursor: pointer;
-        position: absolute;
+        align-self:center;
         color: black;
         font-weight: bold;
         transition: 0.6s ease;
@@ -498,8 +498,7 @@ body {
     .prev-company,
     .next-company {
         cursor: pointer;
-        position: absolute;
-        top: 50%;
+        align-self:center;
         color: black;
         font-weight: bold;
         transition: 0.6s ease;
