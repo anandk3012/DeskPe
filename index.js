@@ -57,8 +57,8 @@ gsap.from('.box-2',{
         duration:2,opacity:-1,
         scrollTrigger:{
             trigger:'.features',
-            start:'top 90%',
-            end:'bottom 20%',
+            start:'top 120%',
+            end:'bottom 120%',
             scrub:false,
             markers:false,
             scrollActions:'play reverse play reverse'
@@ -70,8 +70,8 @@ gsap.from('.box-2',{
         duration:2,opacity:-1,
         scrollTrigger:{
             trigger:'.features',
-            start:'top 90%',
-            end:'bottom 20%',
+            start:'top 120%',
+            end:'bottom 120%',
             scrub:false,
             markers:false,
             scrollActions:'play reverse play reverse'
@@ -99,8 +99,8 @@ gsap.from('.features',{
     
     scrollTrigger:{
         trigger:'.features',
-        start:'top 101%',
-        end:'bottom 90%',
+        start:'top 120%',
+        end:'bottom 120%',
         scrub:true,
         markers:false,
         scrollActions:'play reverse play reverse'
@@ -134,5 +134,5 @@ gsap.from('.googleForm',{
         scrollActions:'play reverse play reverse'
         ,duration:2.5,
     }
-
+    
 })
