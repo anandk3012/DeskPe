@@ -122,7 +122,7 @@ gsap.from('#feat-head',{
 })
 
 gsap.from('.googleForm',{
-    y:100,
+    y:70,
     opacity:0,duration:2.5,
     
     scrollTrigger:{

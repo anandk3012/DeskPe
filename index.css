@@ -315,6 +315,7 @@ body {
     }
 
     .for-employee h2 {
+        font-size: 200%;
         background: var(--Text-gradient-light, linear-gradient(90deg, #003A3B 4.26%, #00A5A8 97.71%));
         background-clip: text;
         -webkit-background-clip: text;
@@ -330,6 +331,8 @@ body {
     }
 
     .for-company h2 {
+        font-size: 200%;
+
         background: var(--Text-gradient-light, linear-gradient(90deg, #003A3B 4.26%, #00A5A8 97.71%));
         background-clip: text;
         -webkit-background-clip: text;
@@ -623,6 +626,7 @@ body {
         text-align: center;
         margin: 2%;
         width: 70%;
+        height:30vh;
         font-size: 1.7vw;
     }
 
