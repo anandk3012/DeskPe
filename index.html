@@ -13,114 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>DeskPe</title>
-    <script>
-
-        // Employee Slideshow
-        let slideIndex_employee = 4;
-
-        showSlides_employee(slideIndex_employee);
-
-        // Next/previous controls
-        function plusSlides_employee(n) {
-            showSlides_employee((slideIndex_employee += n));
-        }
-
-        // Thumbnail image controls
-        function currentSlide_employee(n) {
-            showSlides_employee((slideIndex_employee = n));
-        }
-
-        function showSlides_employee(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide_employee");
-            let dots = document.getElementsByClassName("dot-employee");
-
-            // Ensure that the slideIndex_employee is within valid bounds
-            if (n >= slides.length) {
-                slideIndex_employee = 0; // Reset to the first set of 4 slides
-            }
-            if (n < 0) {
-                slideIndex_employee = slides.length - 4; // Set to the last set of 4 slides
-            }
-
-            // Hide all slides
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            // Display the 4 slides starting from slideIndex_employee
-            for (i = slideIndex_employee; i < slideIndex_employee + 4; i++) {
-                if (slides[i]) {
-                    slides[i].style.display = "flex";
-                    slides[i].style.alignitems = "center"
-                    slides[i].style.textalign = "center"
-                }
-            }
-
-            // Remove "active" class from all dots
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            // Add "active" class to the currently displayed dot
-            dots[Math.floor(slideIndex_employee / 4)].className += " active";
-        }
-    </script>
-    <script>
-        // Company Slideshow
-        let slideIndex_company = 4;
-        showSlides_company(slideIndex_company);
-        function plusSlides_company(n) {
-            showSlides_company((slideIndex_company += n));
-        }
-
-        // Thumbnail image controls
-        function currentSlide_company(n) {
-            showSlides_company((slideIndex_company = n));
-        }
-
-
-        function showSlides_company(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide_company");
-            let dots = document.getElementsByClassName("dot-company");
-
-            // Ensure that the slideIndex_company is within valid bounds
-            if (n >= slides.length) {
-                slideIndex_company = 0; // Reset to the first set of 4 slides
-            }
-            if (n < 0) {
-                slideIndex_company = slides.length - 4; // Set to the last set of 4 slides
-            }
-
-            // Hide all slides
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            // Display the 4 slides starting from slideIndex_company
-            for (i = slideIndex_company; i < slideIndex_company + 4; i++) {
-                if (slides[i]) {
-                    slides[i].style.display = "flex";
-                    slides[i].style.alignitems = "center"
-                    slides[i].style.textalign = "center"
-                }
-            }
-
-            // Remove "active" class from all dots
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            // Add "active" class to the currently displayed dot
-            dots[Math.floor(slideIndex_company / 4)].className += " active";
-        }
-
-    </script>
+    
 </head>
 
 <body>
@@ -172,47 +66,6 @@
 
                 </p>
             </div>
-
-            <!-- <script>
-                // Function to slide in elements from the side using GSAP
-                function slideInFromLeft(element) {
-                    gsap.from(element, {
-                        x: -500, // Slide in from the left (you can change this value)
-                        opacity: 0,
-                        duration: 2, // Animation duration in seconds
-                        ease: "power3.out", // Easing function
-                    });
-                }
-                function slideInFromRight(element){
-                    gsap.from(element, {
-                        x: 500, // Slide in from the left (you can change this value)
-                        opacity: 0,
-                        duration: 2, // Animation duration in seconds
-                        ease: "power3.out", // Easing function
-                    });
-                }
-                function slideInFromDown(element){
-                    gsap.from(element, {
-                        y:100, // Slide in from the left (you can change this value)
-                        opacity: 0,
-                        duration: 2, // Animation duration in seconds
-                        ease: "power3.out", // Easing function
-                    });
-                }
-
-                // Trigger slide-in animation for box-1 and box-2
-                window.addEventListener("load", function () {
-                    const box1 = document.querySelector(".box-1");
-                    const box2 = document.querySelector(".box-2");
-                    const why = document.querySelector(".about-2");
-
-                    slideInFromLeft(box1);
-                    slideInFromRight(box2);
-                    slideInFromDown(why);
-                });
-            </script> -->
-
-
         </div>
         <div class="about-2">
             <div class="why">
@@ -244,12 +97,6 @@
                 <div class="for-employee" style="margin:15px">
                     <h2>Convenience for Employees</h2>
                 </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-                <script src="https://cdnjs.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-                <script>
-
-                </script>
                 <div class="slide-track">
                     <a class="prev-employee" onclick="plusSlides_employee(-4)">&#10094;</a>
                     <div class="slide_employee">
@@ -367,11 +214,113 @@
             </p>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="index.js" defer></script>
+    
+    <script>
 
+        // Employee Slideshow
+        let slideIndex_employee = 4;
+
+        showSlides_employee(slideIndex_employee);
+
+        // Next/previous controls
+        function plusSlides_employee(n) {
+            showSlides_employee((slideIndex_employee += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide_employee(n) {
+            showSlides_employee((slideIndex_employee = n));
+        }
+
+        function showSlides_employee(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide_employee");
+            let dots = document.getElementsByClassName("dot-employee");
+
+            // Ensure that the slideIndex_employee is within valid bounds
+            if (n >= slides.length) {
+                slideIndex_employee = 0; // Reset to the first set of 4 slides
+            }
+            if (n < 0) {
+                slideIndex_employee = slides.length - 4; // Set to the last set of 4 slides
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the 4 slides starting from slideIndex_employee
+            for (i = slideIndex_employee; i < slideIndex_employee + 4; i++) {
+                if (slides[i]) {
+                    slides[i].style.display = "flex";
+                    slides[i].style.alignitems = "center"
+                    slides[i].style.textalign = "center"
+                }
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the currently displayed dot
+            dots[Math.floor(slideIndex_employee / 4)].className += " active";
+        }
+    </script>
+    <script>
+        // Company Slideshow
+        let slideIndex_company = 4;
+        showSlides_company(slideIndex_company);
+        function plusSlides_company(n) {
+            showSlides_company((slideIndex_company += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide_company(n) {
+            showSlides_company((slideIndex_company = n));
+        }
+
+
+        function showSlides_company(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide_company");
+            let dots = document.getElementsByClassName("dot-company");
+
+            // Ensure that the slideIndex_company is within valid bounds
+            if (n >= slides.length) {
+                slideIndex_company = 0; // Reset to the first set of 4 slides
+            }
+            if (n < 0) {
+                slideIndex_company = slides.length - 4; // Set to the last set of 4 slides
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the 4 slides starting from slideIndex_company
+            for (i = slideIndex_company; i < slideIndex_company + 4; i++) {
+                if (slides[i]) {
+                    slides[i].style.display = "flex";
+                    slides[i].style.alignitems = "center"
+                    slides[i].style.textalign = "center"
+                }
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the currently displayed dot
+            dots[Math.floor(slideIndex_company / 4)].className += " active";
+        }
+
+    </script>
 </body>
 
 </html>
