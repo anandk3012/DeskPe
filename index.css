@@ -386,7 +386,7 @@ body {
     .slide-track {
         margin: 1vw auto;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .slide img {
