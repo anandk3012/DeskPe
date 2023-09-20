@@ -472,7 +472,6 @@ body {
     .next-employee {
         cursor: pointer;
         position: absolute;
-        top: 50%;
         color: black;
         font-weight: bold;
         transition: 0.6s ease;
