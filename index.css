@@ -426,7 +426,7 @@ body {
 
     .slide-track {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         height: auto !important;
         width: 80% !important;
         position: relative;
