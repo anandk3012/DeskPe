@@ -136,13 +136,14 @@
                 for all your corporate expenses </h1>
         </div>
         <div class="display-box">
+            <div class="display-3">
+                <img src="Main Images.svg" alt="App">
+            </div>
             <div class="display-2">
                 <p>Make your company payments and reimbursements
                     hassle-free and quickly</p>
             </div>
-            <div class="display-3">
-                <img src="Main Images.svg" alt="App">
-            </div>
+
         </div>
     </div>
     <div class="mainbody-2">
@@ -162,6 +163,45 @@
 
                 </p>
             </div>
+            <!-- <script>
+                // Function to slide in elements from the side using GSAP
+                function slideInFromLeft(element) {
+                    gsap.from(element, {
+                        x: -500, // Slide in from the left (you can change this value)
+                        opacity: 0,
+                        duration: 2, // Animation duration in seconds
+                        ease: "power3.out", // Easing function
+                    });
+                }
+                function slideInFromRight(element){
+                    gsap.from(element, {
+                        x: 500, // Slide in from the left (you can change this value)
+                        opacity: 0,
+                        duration: 2, // Animation duration in seconds
+                        ease: "power3.out", // Easing function
+                    });
+                }
+                function slideInFromDown(element){
+                    gsap.from(element, {
+                        y:100, // Slide in from the left (you can change this value)
+                        opacity: 0,
+                        duration: 2, // Animation duration in seconds
+                        ease: "power3.out", // Easing function
+                    });
+                }
+
+                // Trigger slide-in animation for box-1 and box-2
+                window.addEventListener("load", function () {
+                    const box1 = document.querySelector(".box-1");
+                    const box2 = document.querySelector(".box-2");
+                    const why = document.querySelector(".about-2");
+
+                    slideInFromLeft(box1);
+                    slideInFromRight(box2);
+                    slideInFromDown(why);
+                });
+            </script> -->
+
 
         </div>
         <div class="about-2">
@@ -183,6 +223,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <div class="mainbody-3">
@@ -192,6 +234,12 @@
                 <div class="for-employee" style="margin:15px">
                     <h2>Convenience for Employees</h2>
                 </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+                <script src="https://cdnjs.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+                <script>
+
+                </script>
                 <div class="slide-track">
                     <a class="prev-employee" onclick="plusSlides_employee(-4)">&#10094;</a>
                     <div class="slide_employee">
@@ -267,12 +315,13 @@
                 </div>
             </div>
             <div class="benefits">
-                <h2>Unique Features</h2>
+                <h2 id="feat-head">Unique Features</h2>
                 <div id="benefits">
-                    <div class="slide_benefits">Travel Booking</div>
-                    <div class="slide_benefits">Gift Vouchers</div>
-                    <div class="slide_benefits">Pay Bills</div>
-                    <div class="slide_benefits">Subscriptions</div>
+                    <div class="slide_benefits"><span>Travel Booking
+                        </span></div>
+                    <div class="slide_benefits"><span>Gift Vouchers</span></div>
+                    <div class="slide_benefits"><span>Pay Bills</span></div>
+                    <div class="slide_benefits"><span>Subscriptions</span></div>
                 </div>
             </div>
         </div>
@@ -284,14 +333,18 @@
     </div>
     <div class="googleForm">
         <span>
-            Don't get left out in digitising your business expenses and grow faster.<br>
-            For inquiries and more details, reach out to us here:
-
+            <h2>
+                Don't get left out in digitising your business expenses and grow faster.<br>
+            </h2><br>
+            <span>
+                For inquiries and more details, reach out to us here:
+            </span>
         </span>
-        <iframe
-            src="https://script.google.com/a/macros/iith.ac.in/s/AKfycbyrbwikUjf_TWAASkjUFBCltkclP-LN6PtKcXPEK5I6I6A6oyuREfmgqK6nsEh3S7Hq/exec"
-            frameborder="0" height="1000" width="1000" scrolling="no"></iframe>
     </div>
+    <iframe
+        src="https://script.google.com/a/macros/iith.ac.in/s/AKfycbyrbwikUjf_TWAASkjUFBCltkclP-LN6PtKcXPEK5I6I6A6oyuREfmgqK6nsEh3S7Hq/exec"
+        frameborder="0" height="1100" width="100%" scrolling="no">
+    </iframe>
     <div class="footer" id="footer">
         <div id="header-logo">
             <span><a href="index.html">DeskPe</a></span>
@@ -302,7 +355,11 @@
                 Email : deskpe@gmail.com
             </p>
         </div>
-
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
