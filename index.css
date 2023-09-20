@@ -20,7 +20,7 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 10vh;
+        height: 13vh;
 
         background: rgba(0, 124, 126, 0.00);
     }
@@ -34,7 +34,14 @@ body {
     }
 
     #header-logo a {
+        display: flex;
+
         text-decoration: none;
+    }
+    #header-logo img{
+        height: auto !important ;
+        width:60%;
+        margin-top: 5%;
     }
 
     #header-logo span {
