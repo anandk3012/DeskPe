@@ -603,7 +603,7 @@ body {
     #benefits {
         display: flex;
         justify-content: space-around;
-        width: 98%;
+        width: 90%;
     }
 
     .slide_benefits {
