@@ -349,7 +349,7 @@ body {
     .slider {
         display: flex;
         flex-direction: column;
-        height: 40%;
+        height: 30%;
         margin: 1vw auto;
         overflow: hidden;
         position: relative;
@@ -586,12 +586,13 @@ body {
         align-items: center;
         text-align: center;
         width: 80%;
+        height:30%;
         margin:0 0 1vw 0;
         padding-bottom: 15px;
     }
 
     .benefits h2 {
-        font-size: 240%;
+        font-size: 2rem;
         background: var(--Text-gradient-light, linear-gradient(90deg, #003A3B 4.26%, #00A5A8 97.71%));
         background-clip: text;
         -webkit-background-clip: text;
